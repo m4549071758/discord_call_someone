@@ -13,9 +13,9 @@ async def on_message(message):
     if message.author.bot:
         pass
 
-    # メンションされたら実行
+    # Execure When Mentioned
     if client.user in message.mentions:
-        role = message.guild.get_role() #roleID
+        role = message.guild.get_role() # roleID
         role_members = role.members
 
         selected_member = random.choice(role_members)
