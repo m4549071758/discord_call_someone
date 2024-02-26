@@ -11,7 +11,7 @@ async def on_ready():
 @client.event
 async def on_message(message):
     if message.author.bot:
-        pass
+        return
 
     # Execure When Mentioned
     if client.user in message.mentions:
